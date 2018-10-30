@@ -1,0 +1,16 @@
+{
+  "name": "ada-farm",
+  "version": "1.0.0",
+  "description": "A fun day out on the farm",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "serve ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "serve": "^10.0.2"
+  }
+}
