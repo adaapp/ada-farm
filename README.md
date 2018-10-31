@@ -6,7 +6,7 @@ This repository is structured to run two farms side-by-side. The first is the fa
 
 # How to work with this repository
 
-** We are going to **
+**We are going to**
 
 1. Clone this repository
 2. Create a branch 
