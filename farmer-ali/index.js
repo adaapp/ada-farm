@@ -20,6 +20,7 @@ function setup() {
 // This draw function is called repeatedly by
 // P5 and is where we can do most of our work
 function draw() {
+    background(100,227,30)
     farmer.draw()
 }
 
