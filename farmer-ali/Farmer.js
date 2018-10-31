@@ -1,6 +1,6 @@
 class Farmer {
     constructor(userName) {
-        this.userName = userName;
+        this.userName = userName
         this.image = loadImage('farmer.png')
         this.x = 100
         this.y = 100
@@ -29,6 +29,7 @@ class Farmer {
 
     draw() {
         var bobAmount = Math.sin(millis() / 60) * 3
+
         image(
             this.image,
             this.x,
