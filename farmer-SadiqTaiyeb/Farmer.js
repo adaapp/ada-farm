@@ -2,16 +2,43 @@
 class Farmer {
     constructor(userName) {
         this.userName = userName;
-        this.image = loadImage('farmer.png')
+        this.image = loadImage('tractor.png')
+        this.x = 100;
+        this.y = 100
+        this.width = 60
+        this.height = 60
     }
 
     speak(words) {
         alert(words)
     }
-
-    draw() {
-        rect(10,10,10,10)
-        image(this.image, 0, 0 )
+    update() {
+        if(keyIsDown(RIGHT_ARROW)) {
+            this.x = this.x + 3
+        }
+        if (keyIsDown(LEFT_ARROW)) {
+            this.x = this.x - 3
+        }
+        if (keyIsDown(UP_ARROW)) {
+            this.y = this.y - 3
+        }
+        if (keyIsDown(DOWN_ARROW)) {
+            this.y = this.y + 3
+        }
+    
     }
 
+    draw() {
+        var bobAmount = Math.sin(millis()/120) * 4
+        image(
+            this.image,
+            this.x,
+            this.y + bobAmount,
+            this.width,
+            this.height 
+            )
+
+        }
+
+    
 } // End of the Farmer class oooarrr
