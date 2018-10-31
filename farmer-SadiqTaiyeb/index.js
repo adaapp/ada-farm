@@ -22,7 +22,7 @@ function setup() {
     
     fields.push(new Field("Tiger Field", 10, 250, 375, 350, 325))
 
-    fields.push(new Field("Tools Area", 10, 625, 375, 200, 325))
+    fields.push(new Field("Tool Shed", 10, 625, 375, 200, 325))
 }
 
 // This draw function is called repeatedly by
