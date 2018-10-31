@@ -4,3 +4,4 @@ class Field {
         this.health = health;
     }
 }
+
