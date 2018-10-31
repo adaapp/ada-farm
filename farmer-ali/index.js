@@ -6,7 +6,7 @@ var farmer
 function setup() {
     
     createCanvas(window.innerWidth, window.innerHeight)
-    background(100,227,30)
+    background('#78d361')
     alert("Welcome to the farm")
     var username = prompt("What\'s your name?")
     farmer = new Farmer(username);
@@ -20,7 +20,14 @@ function setup() {
 // This draw function is called repeatedly by
 // P5 and is where we can do most of our work
 function draw() {
-    background(100,227,30)
+    background('#78d361')
+
+    fieldA.draw()
+    fieldB.draw()
+    fieldC.draw()
+    fieldD.draw()
+
+    farmer.update()
     farmer.draw()
 }
 
