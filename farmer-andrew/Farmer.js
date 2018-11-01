@@ -18,7 +18,7 @@ class Farmer {
     update() {
         if (keyIsDown(RIGHT_ARROW)) {
             this.x = this.x + 3
-        }y
+        }
 
         if (keyIsDown(LEFT_ARROW)) {
             this.x = this.x - 3

@@ -9,10 +9,10 @@ function setup() {
     
     createCanvas(window.innerWidth, window.innerHeight)
     background(100,227,30)
-    alert("Welcome to the farm")
-    var username = prompt("What\'s your name?")
-    farmer = new Farmer(username);
-    farmer.speak("Ey oh ey oh ey oh")
+    // alert("Welcome to the farm")
+    // var username = prompt("What\'s your name?")
+    farmer = new Farmer();
+    //afarmer.speak("Ey oh ey oh ey oh")
 
     fields.push(
         new Field('Pig field', 10, 25, 25, 350, 300)

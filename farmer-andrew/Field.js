@@ -9,12 +9,12 @@ class Field {
     }
 
     draw() {
-        rect(this.x, this.y, this.width, this.height, 15) //number input creates round edges for shapes
         stroke('#592803')
         strokeWeight(10)
         fill('#b58969')
         
-        
+        rect(this.x, this.y, this.width, this.height, 15) //number input creates round edges for shapes
+
     }
 
     containsPoint(x, y) {
