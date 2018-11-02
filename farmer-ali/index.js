@@ -13,10 +13,10 @@ function setup() {
     farmer.speak('Ey oh ey oh ey oh')
 
     fields.push(
-        new Field('Pig field', 10, 25, 75, 350, 175)
+        new Field('Wheat field', 10, 25, 75, 350, 175)
     )
     fields.push(
-        new Field('Wheat field', 10, 25, 275, 350, 125)
+        new Field('Carrot field', 10, 25, 275, 350, 125)
     )
     fields.push(
         new Field('Tiger field', 10, 400, 75, 200, 325)
@@ -27,6 +27,10 @@ function setup() {
     fields.push(
         new Field('Pumpkin field', 10, 250, 425, 350, 275)
     )
+}
+
+function keyPressed() {
+    farmer.farmerKeyPressed()
 }
 
 // This draw function is called repeatedly by
@@ -53,9 +57,13 @@ function draw() {
 
 function setActiveFieldFromFarmerPosition() {
     activeField = null
+    farmer.setActiveField(null)
     for (var field of fields) {
         if (field.containsPoint(farmer.x, farmer.y)) {
             activeField = field
+            farmer.setActiveField(field)
         }
+        
+        
     }
 }

@@ -1,5 +1,6 @@
 class Farmer {
     constructor(userName) {
+        this.field = null
         this.userName = userName
         this.image = loadImage('farmer.png')
         this.x = 100
@@ -10,6 +11,10 @@ class Farmer {
 
     speak(words) {
         alert(words)
+    }
+
+    setActiveField(field) {
+        this.field = field
     }
 
     update() {
@@ -24,6 +29,13 @@ class Farmer {
         }
         if (keyIsDown(UP_ARROW)) {
             this.y = this.y - 3
+        }
+
+    }
+
+    farmerKeyPressed() {
+        if (keyCode == ENTER) {
+            this.field.plant(this.x, this.y)
         }
     }
 
